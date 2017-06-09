@@ -12,11 +12,14 @@ let blog = [
 const blogOutput = document.getElementById("blog");
 
 function insertBlogPosts() {
+	blog.reverse();
 	for (var i = 0, x = blog.length; i < x; i++) {
 		blogOutput.innerHTML += 
-		`<h4>${blog[i].title}</h4>
-		<p>${blog[i].copy}</p>
-		<date>${blog[i].date}</date>`
+		`<article>
+			<h4>${blog[i].title}</h4>
+			<p>${blog[i].copy}</p>
+			<date>${blog[i].date}</date>
+		</article>`
 	}
 }
 

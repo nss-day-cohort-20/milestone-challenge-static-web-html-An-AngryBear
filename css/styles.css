@@ -20,6 +20,7 @@ nav {
 	height: 40px;
 	background-color: black;
 	border-bottom: 2px solid black;
+	min-width: 450px;
 }
 nav ul > li {
 	display: inline;
@@ -27,6 +28,25 @@ nav ul > li {
 	font-family: Orbitron;
 	padding: 1em;
 	font-size: .8em;
+}
+nav ul a:visited, nav ul a:link {
+	color: #5fc157;
+}
+nav ul a {
+	text-decoration: none;
+	padding: .2em .5em .2em .5em;
+	border-radius: 8px;
+}
+nav ul a:hover, nav ul a:active {
+	color: black;
+	font-weight: bolder;
+}
+nav ul a:active {
+	background-color: #787f63;
+}
+nav ul a:hover {
+	background-color: #5fc157;
+	transition-duration: .7s;
 }
 nav ul {
 	padding-top: .5em;
@@ -40,9 +60,9 @@ nav ul {
 }
 h1, h3 {
 	text-align: center;
-	color: #aeff89;
-	text-shadow: 2px 2px black;
+	color: #5fc157;
 	font-weight: bolder;
+	text-shadow: 3px 3px 8px black;
 }
 h1 {
 	font-family: 'Cormorant SC', serif;
@@ -60,6 +80,9 @@ h3 {
 }
 #content {
 	overflow: auto;
+}
+.main-content {
+	max-width: 860px;
 }
 .main-img {
 	background-image: url("../images/sadbear.jpg");
@@ -87,24 +110,58 @@ h3 {
 	display: inline;
 	padding-right: 2em;
 }
+.resource-list ul a:visited, .resource-list ul a:link {
+	color: #5fc157;
+}
 .resource-list ul {
 	text-align: center;
 }
-.resource-list a {
+.resource-list ul a {
 	text-decoration: none;
+	padding: .2em .5em .2em .5em;
+	border-radius: 8px;
+}
+.resource-list ul a:hover, .resource-list ul a:active {
+	color: black;
+	font-weight: bolder;
+}
+.resource-list ul a:active {
+	background-color: #787f63;
+}
+.resource-list ul a:hover {
+	background-color: #5fc157;
+	transition-duration: .7s;
+}
+.resource-list ul a:hover {
+
 }
 h4 {
 	text-align: center;
+	padding-bottom: 1em;
 }
-.blog {
-
+.blog article {
+	margin-bottom: 2em;
+	padding: 1em;
 }
 footer {
 	height: 100px;
 	background-color: black;
-	border-top: 2px solid #005100;
-	color: #5fc157;
+	color: #787f63;
 	text-align: center;
 	padding-top: 1em;
 	padding-bottom: 1em;
+	font-family: Orbitron;
+	font-size: .8em;
+}
+footer ul li {
+	display: inline;
+	padding: 1.5em;
+}
+footer p {
+	padding-top: 2em;
+}
+.blog {
+	border: 2px solid #005100;
+	padding: 1em;
+	border-radius: 8px;
 }
