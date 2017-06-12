@@ -14,7 +14,7 @@ const blogOutput = document.getElementById("blog");
 function insertBlogPosts() {
 	blog.reverse();
 	for (var i = 0, x = blog.length; i < x; i++) {
-		blogOutput.innerHTML += 
+		blogOutput.innerHTML +=
 		`<article>
 			<h4>${blog[i].title}</h4>
 			<p>${blog[i].copy}</p>
